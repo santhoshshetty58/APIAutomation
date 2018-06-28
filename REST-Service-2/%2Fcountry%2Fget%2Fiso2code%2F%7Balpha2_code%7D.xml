@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/country/get/iso2code/{alpha2_code}" path="/country/get/iso2code/{alpha2_code}" id="65785805-a4db-4cd0-9a5d-39b467d500f0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="65785805-a4db-4cd0-9a5d-39b467d500f0fileName">%2Fcountry%2Fget%2Fiso2code%2F%7Balpha2_code%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>alpha2_code</con:name>
+      <con:value>alpha2_code</con:value>
+      <con:style>TEMPLATE</con:style>
+      <con:default>alpha2_code</con:default>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GET" id="e76e7eac-dc81-4c4e-929e-727c07465d5c" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:ns="http://services.groupkt.com/country/get/iso2code/30346">ns:Response</con:element>
+    </con:representation>
+    <con:request name="GET Request" id="d2a5b68b-034d-40e4-ba0a-37fa6504ed1c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://services.groupkt.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

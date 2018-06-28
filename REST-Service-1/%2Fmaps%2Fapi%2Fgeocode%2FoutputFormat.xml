@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/maps/api/geocode/outputFormat" path="/maps/api/geocode/outputFormat" id="7023aecf-6d7e-4a7c-99ad-d3a348cc88af" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7023aecf-6d7e-4a7c-99ad-d3a348cc88affileName">%2Fmaps%2Fapi%2Fgeocode%2FoutputFormat</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>parameters</con:name>
+      <con:style>QUERY</con:style>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GET" id="f57f5bd9-3b11-40a6-9614-c03fcd4f0d0e" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="FAULT">
+      <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:request name="GET Request" id="0567244e-3640-42b7-86a7-540d96854250" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://maps.googleapis.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

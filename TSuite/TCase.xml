@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b7b1669a-7c53-418d-9252-a640463631fe" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b7b1669a-7c53-418d-9252-a640463631fefileName">TCase</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="TRequest" id="61826693-5387-462a-896e-f35f2ca5da57">
+    <con:settings/>
+    <con:config service="REST Service 2" resourcePath="/country/get/iso2code/{alpha2_code}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="TRequest" id="d2a5b68b-034d-40e4-ba0a-37fa6504ed1c" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://services.groupkt.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://services.groupkt.com/country/get/iso2code/30346</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <entry key="alpha2_code" value="IN" xmlns="http://eviware.com/soapui/config"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
